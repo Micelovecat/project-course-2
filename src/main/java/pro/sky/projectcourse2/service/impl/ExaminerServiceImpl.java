@@ -8,6 +8,7 @@ import pro.sky.projectcourse2.model.Question;
 import pro.sky.projectcourse2.service.ExaminerService;
 import pro.sky.projectcourse2.service.QuestionService;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
@@ -38,5 +39,10 @@ public class ExaminerServiceImpl implements ExaminerService {
 
         log.info("The following random questions for amount {} have been found:  {}", amount, questions);
         return questions;
+    }
+
+    @Override
+    public ArrayList findAllQuestions() {
+        return null;
     }
 }
